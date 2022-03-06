@@ -1,20 +1,11 @@
 import 'package:flutter/material.dart';
+import 'package:virtual_run_application/constants/constants.dart';
 
 class RunPage extends StatelessWidget {
   const RunPage({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(
-        title: const Text('Home'),
-      ),
-      body: const Center(
-        child: Text(
-          'test1',
-          style: TextStyle(fontSize: 60),
-        ),
-      ),
-    );
+    return Padding(padding: EdgeInsets.only(left: appPadding, right: appPadding  / 2),);
   }
 }

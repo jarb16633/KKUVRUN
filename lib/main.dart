@@ -51,18 +51,20 @@ class _MyHomePageState extends State<MyHomePage> {
         type: BottomNavigationBarType.fixed,
         backgroundColor: Colors.white,
         showUnselectedLabels: false,
-        selectedItemColor: Colors.black38,
-        iconSize: 30,
+        showSelectedLabels: false,
+        selectedItemColor: Colors.black,
+        unselectedItemColor: Colors.black38,
+        iconSize: 25,
         currentIndex: currentIndex,
         onTap: (index) => setState(() => currentIndex = index),
         items: const [
           BottomNavigationBarItem(
             icon: Icon(Icons.home_outlined),
-            label: 'Home',
+            label: 'Feed',
           ),
           BottomNavigationBarItem(
             icon: Icon(Icons.leaderboard_outlined),
-            label: 'Feed',
+            label: 'Activity',
           ),
           BottomNavigationBarItem(
             icon: Icon(Icons.directions_run_outlined),
@@ -70,7 +72,7 @@ class _MyHomePageState extends State<MyHomePage> {
           ),
           BottomNavigationBarItem(
             icon: Icon(Icons.people_outlined),
-            label: 'Club',
+            label: 'Community',
           ),
           BottomNavigationBarItem(
             icon: Icon(Icons.mail_outlined),
