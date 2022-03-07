@@ -23,7 +23,7 @@ class RunPage extends StatelessWidget {
                       top: 3,
                       child: Container(
                         child: const CircleAvatar(
-                          backgroundImage: AssetImage('images/profile.png'),
+                          backgroundImage: AssetImage('images/Pro_Trong.jpg'),
                           radius: 30,
                         )
                       ),
@@ -48,21 +48,58 @@ class RunPage extends StatelessWidget {
                   decoration: BoxDecoration(
                     borderRadius: BorderRadius.circular(20),
                     image: const DecorationImage(
-                      image: AssetImage('images/testrun2.png'),
+                      image: AssetImage('images/map.png'),
                       fit: BoxFit.cover,
                     ),
                     color: Colors.black,
                   ),
                 ),
               ),
-              ElevatedButton(
-                  style: ElevatedButton.styleFrom(
-                    primary: primary,
-                    onPrimary: white,
+              const SizedBox(height: 10,),
+              Center(
+                child: ElevatedButton(
+                    style: ButtonStyle(
+                      padding: MaterialStateProperty.all<EdgeInsets>(const EdgeInsets.only(left: 20, right: 20, top: 5, bottom: 5)),
+                      backgroundColor: MaterialStateProperty.all<Color>(primary),
+                      shape: MaterialStateProperty.all<RoundedRectangleBorder>(
+                        RoundedRectangleBorder(
+                          borderRadius: BorderRadius.circular(25),
+                          side: const BorderSide(color: Colors.black12)
+                        )
+                      )
+                    ),
+                  onPressed: () {},
+                  child: const Text(
+                      "Start",
+                    style: TextStyle(
+                      fontSize: 45,
+                      fontWeight: FontWeight.bold,
+                      fontStyle: FontStyle.italic
+                    ),
                   ),
+                ),
+              ),
+              const SizedBox(height: 3,),
+              Center(child: ElevatedButton(
+                style: ButtonStyle(
+                    padding: MaterialStateProperty.all<EdgeInsets>(const EdgeInsets.only(left: 20, right: 20, top: 2, bottom: 2)),
+                    foregroundColor: MaterialStateProperty.all<Color>(black),
+                    backgroundColor: MaterialStateProperty.all<Color>(white),
+                    shape: MaterialStateProperty.all<RoundedRectangleBorder>(
+                        RoundedRectangleBorder(
+                          borderRadius: BorderRadius.circular(10),
+                          side: const BorderSide(color: Colors.black12)
+                        )
+                    )
+                ),
                 onPressed: () {},
-                child: const Text("Start"),
-              )
+                child: const Text(
+                  "Set goal",
+                  style: TextStyle(
+                      fontSize: 12
+                  ),
+                ),
+              ),)
             ],
           ),
         ),
