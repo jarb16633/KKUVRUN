@@ -38,7 +38,7 @@ class _MyHomePageState extends State<MyHomePage> {
   final screens = [
     const HomePage(),
     const ActivityPage(),
-    RunPage(),
+    const RunPage(),
     const CommunityPage(),
     const NotificationPage(),
   ];

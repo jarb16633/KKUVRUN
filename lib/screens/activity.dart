@@ -85,7 +85,7 @@ class EventItem extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: EdgeInsets.all(15),
+      padding: const EdgeInsets.all(15),
       child: Container(
           height: 350,
           decoration: BoxDecoration(
@@ -93,7 +93,7 @@ class EventItem extends StatelessWidget {
             color: Colors.redAccent,
           ),
           child: Padding(
-            padding: EdgeInsets.all(20),
+            padding: const EdgeInsets.all(20),
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.stretch,
               children: const <Widget>[

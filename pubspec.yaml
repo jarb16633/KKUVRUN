@@ -81,11 +81,12 @@ fonts:
     fonts:
       - asset: fonts/WorkSans-Regular.ttf
       - asset: fonts/WorkSans-Bold.ttf
-        style: bold
+        weight: 700
       - asset: fonts/WorkSans-Light.ttf
-        style: light
+        weight: 300
       - asset: fonts/WorkSans-SemiBoldItalic.ttf
-        sytle: semibolditalic
+        weight: 600
+        style: italic
 
   # For details regarding fonts from package dependencies,
   # see https://flutter.dev/custom-fonts/#from-packages
