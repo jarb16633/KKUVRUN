@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:virtual_run_application/constants/constants.dart';
 
 class RunPage extends StatelessWidget {
   const RunPage({Key? key}) : super(key: key);
@@ -53,6 +54,14 @@ class RunPage extends StatelessWidget {
                     color: Colors.black,
                   ),
                 ),
+              ),
+              ElevatedButton(
+                  style: ElevatedButton.styleFrom(
+                    primary: primary,
+                    onPrimary: white,
+                  ),
+                onPressed: () {},
+                child: const Text("Start"),
               )
             ],
           ),
