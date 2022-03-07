@@ -11,7 +11,6 @@ class RunPage extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         backgroundColor: white,
-        title: "",
       ),
     );
   }
