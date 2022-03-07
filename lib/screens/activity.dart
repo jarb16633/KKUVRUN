@@ -14,18 +14,18 @@ class ActivityPage extends StatelessWidget {
                   BoxConstraints.tightFor(height: 55, width: 250)),
         ),
         child: FloatingActionButton.extended(
-          backgroundColor: Color(0xFFA73B24),
+          backgroundColor: const Color(0xFFA73B24),
           onPressed: () {
             Navigator.push(
-                context, MaterialPageRoute(builder: (context) => MyHomePage()));
+                context, MaterialPageRoute(builder: (context) => const MyHomePage()));
           },
-          label: Text('Go For Run'),
+          label: const Text('Go For Run'),
         ),
       ),
       floatingActionButtonLocation: FloatingActionButtonLocation.centerFloat,
       body: SafeArea(
         child: Padding(
-            padding: EdgeInsets.all(15),
+            padding: const EdgeInsets.all(15),
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: <Widget>[
