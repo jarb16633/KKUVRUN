@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "560887588814",
+    "project_id": "loginflutter-443d4",
+    "storage_bucket": "loginflutter-443d4.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:560887588814:android:bd112843d70930a088ad9f",
+        "android_client_info": {
+          "package_name": "com.example.strava"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "560887588814-3r5qm8925jncc1d0r2jr122b0cst0s18.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD3ltdHM9SSctjezfl-ZQGZBnlqodtB6eo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "560887588814-3r5qm8925jncc1d0r2jr122b0cst0s18.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
