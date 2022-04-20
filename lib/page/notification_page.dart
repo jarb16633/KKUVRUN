@@ -34,7 +34,8 @@ class _NotificationState extends State<NotificationPage> {
                         },
                         child: Container(
                           child: const CircleAvatar(
-                            backgroundImage: AssetImage('images/Pro_Trong.jpg'),
+                            backgroundImage:
+                                AssetImage('images/LoginPage_KKUVRUN.png'),
                             radius: 30,
                           ),
                         ),

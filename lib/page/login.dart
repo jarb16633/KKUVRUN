@@ -14,7 +14,6 @@ import 'package:flutter/material.dart';
 // import 'package:loginsystem/screen/welcome.dart';
 
 import '../pages/profile.dart';
-import 'first_login.dart';
 
 class LoginScreen extends StatefulWidget {
   @override
@@ -106,7 +105,7 @@ class _LoginScreenState extends State<LoginScreen> {
                                 minimumSize: const Size.fromHeight(35)),
                             onPressed: () async {
                               if (formKey.currentState!.validate()) {
-                                formKey.currentState?.save();
+                                formKey.currentState!.save();
                                 try {
                                   await FirebaseAuth.instance
                                       .signInWithEmailAndPassword(

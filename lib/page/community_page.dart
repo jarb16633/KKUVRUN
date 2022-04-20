@@ -37,7 +37,7 @@ class _CommunityState extends State<Community> {
                             child: Container(
                               child: const CircleAvatar(
                                 backgroundImage:
-                                    AssetImage('images/Pro_Trong.jpg'),
+                                    AssetImage('images/LoginPage_KKUVRUN.png'),
                                 radius: 30,
                               ),
                             ),

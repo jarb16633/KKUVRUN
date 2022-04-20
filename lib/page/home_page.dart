@@ -3,8 +3,9 @@ import 'package:cloud_firestore/cloud_firestore.dart';
 
 import '../pages/profile.dart';
 import 'acc_page.dart';
-import 'runpage.dart';
+import 'package:strava/widgets/entry_card.dart';
 import 'package:provider/provider.dart';
+import 'package:strava/model/entry.dart';
 
 class HomePageE extends StatelessWidget {
   HomePageE({Key? key}) : super(key: key);
@@ -12,6 +13,8 @@ class HomePageE extends StatelessWidget {
   String? textNote;
   final formKey = GlobalKey<FormState>();
   Profile profile = Profile();
+  late List<Entry> data;
+  List<EntryCard> cards = [];
 
   @override
   Widget build(BuildContext context) {
@@ -26,7 +29,7 @@ class HomePageE extends StatelessWidget {
                   height: 70,
                   child: Stack(
                     alignment: Alignment.topCenter,
-                    children: <Widget>[
+                    children: [
                       Positioned(
                         left: 5,
                         top: 3,
@@ -40,7 +43,7 @@ class HomePageE extends StatelessWidget {
                           child: Container(
                             child: const CircleAvatar(
                               backgroundImage:
-                                  AssetImage('images/Pro_Trong.jpg'),
+                                  AssetImage('images/LoginPage_KKUVRUN.png'),
                               radius: 30,
                             ),
                           ),
@@ -64,18 +67,6 @@ class HomePageE extends StatelessWidget {
                       title: Text('What\'s New'),
                       subtitle: Text('Check out the latest from KKU VRUN'),
                     ),
-                    TextField(
-                      onChanged: (value) {
-                        textNote = value;
-                      },
-                      decoration: InputDecoration(hintText: 'Enter hear'),
-                    ),
-                    ElevatedButton(
-                        onPressed: () async {
-                          await users.add({'test': textNote}).then(
-                              (value) => print('add'));
-                        },
-                        child: Text('submit')),
                     EventItem(),
                     EventItem(),
                     EventItem(),

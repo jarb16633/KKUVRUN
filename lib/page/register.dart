@@ -5,9 +5,9 @@ import 'package:flutter/material.dart';
 import 'package:firebase_core/firebase_core.dart';
 
 import 'package:form_field_validator/form_field_validator.dart';
+import 'package:strava/page/sec_home-page.dart';
 import 'package:strava/pages/profile.dart';
 import 'package:fluttertoast/fluttertoast.dart';
-import 'first_login.dart';
 
 import 'package:strava/data/firebase.dart';
 
@@ -76,6 +76,22 @@ class _RegisterScreenState extends State<RegisterScreen> {
                           ),
                         ),
                         const Text(
+                          'Username',
+                          style: TextStyle(fontSize: 20),
+                        ),
+                        Padding(
+                          padding: EdgeInsets.all(20),
+                          child: TextFormField(
+                            onSaved: (String? username) {
+                              profile.username = username;
+                            },
+                            decoration: const InputDecoration(
+                              border: OutlineInputBorder(),
+                              hintText: 'Enter Username',
+                            ),
+                          ),
+                        ),
+                        const Text(
                           'Password',
                           style: TextStyle(fontSize: 20),
                         ),
@@ -122,6 +138,7 @@ class _RegisterScreenState extends State<RegisterScreen> {
                                         .doc(value.user?.uid)
                                         .set({
                                       "email": value.user?.email,
+                                      "username": profile.username,
                                       "password": profile.password,
                                       "distance": " ",
                                       "time": " ",
@@ -131,7 +148,7 @@ class _RegisterScreenState extends State<RegisterScreen> {
                                               context,
                                               MaterialPageRoute(
                                                   builder: (context) {
-                                                return HomeScreen();
+                                                return SecLogin();
                                               }),
                                               (route) => false,
                                             ));

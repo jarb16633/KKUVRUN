@@ -82,8 +82,9 @@ class _MapPageState extends State<MapPage> {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-        body: Stack(children: [
+    return SafeArea(
+        child: Scaffold(
+            body: Stack(children: [
       Container(
           child: GoogleMap(
         polylines: polyline,
@@ -172,6 +173,6 @@ class _MapPageState extends State<MapPage> {
               ],
             ),
           ))
-    ]));
+    ])));
   }
 }

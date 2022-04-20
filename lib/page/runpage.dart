@@ -27,7 +27,7 @@ class RunPageState extends State<RunPage> {
     data = _results.map((item) => Entry.fromMap(item)).toList();
     data.forEach((element) => cards.add(EntryCard(entry: element)));
 
-    setState(() {});
+    if (mounted) setState(() {});
   }
 
   void addEntries(Entry en) async {

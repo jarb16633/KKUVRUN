@@ -15,12 +15,12 @@ class SecLogin extends StatelessWidget {
         child: SingleChildScrollView(
           child: Column(
             children: [
-              Image.asset("images/logo.png"),
+              Image.asset("images/LoginPage_KKUVRUN.png"),
               SizedBox(
                 width: double.infinity,
                 child: ElevatedButton.icon(
                   icon: const Icon(Icons.add),
-                  label: const Text("สร้างบัญชีผู้ใช้",
+                  label: const Text("Create Account",
                       style: TextStyle(fontSize: 20)),
                   onPressed: () {
                     Navigator.push(context,
@@ -34,8 +34,7 @@ class SecLogin extends StatelessWidget {
                 width: double.infinity,
                 child: ElevatedButton.icon(
                   icon: const Icon(Icons.login),
-                  label:
-                      const Text("เข้าสู่ระบบ", style: TextStyle(fontSize: 20)),
+                  label: const Text("Log In", style: TextStyle(fontSize: 20)),
                   onPressed: () {
                     Navigator.push(context,
                         MaterialPageRoute(builder: (context) {
